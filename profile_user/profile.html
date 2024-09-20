@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="auth">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page "
+                href="../auth/login/login.html">sign_in</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="../auth/rsgister/register.html"
+                >sign_up</a
+              >
+            </li>
+          </ul>
+          <!--  login user -->
+          <ul class="navbar-nav" id="user">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-info dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span  id="userinfo"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="" style="cursor: pointer;" id="logout">logout</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- end login user -->
+        </div>
+      </div>
+    </nav>
+    <!--end nav bar -->
+   <div class="container">
+    <br>
+    <a class="back" href="../home/home.html" >
+      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+      <span>Back</span>
+    </a> 
+    <br>
+    <br>
+      <div class="row g-0 m-2">
+        <section class="profile-user">
+           <div class="profile">
+            <img class="imguser" src="data:image/jpeg;base64,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" alt="">
+              <div class="body">
+                <h1 >length product <span class="text-info lengthproduct"></span></h1>
+                <ul>
+                  <li> <h1 class="username">sameh</h1> </li>
+                  <li> <h5 class="email">sameh.com</h5> </li>
+                  <li> <p >password <span class="password text-info"></span></p> </li>
+                </ul>
+              </div>
+              <div class="setting mt-2">
+                <label for="name">username</label>
+                <input type="text" class="form-control"  id="name">
+                <label for="email">email</label>
+                <input type="email" class="form-control" id="editemail">
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="editpassword">
+               <button class="btn btn-info w-100 mt-2 edituser">OK</button>
+              </div>
+              <button class="btn btn-info edit">Edit</button>
+          </div>
+        </section>
+      </div>
+   </div>
+    <script src="profile.js"></script>
+    <script src="../user.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

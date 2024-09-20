@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart | login page</title>
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+     <!-- loader -->
+        <div class="loaders" id="loaders">
+          <div class="d-flex   justify-content-center" style="margin-top: 25%;">
+            <div class="spinner-border text-info " style="width: 5rem; height: 5rem;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+           </div>
+        </div>
+      <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="login" href="../login/login.html">sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../rsgister/register.html">sign_up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar -->
+      
+          <!-- alert -->
+          <div class="alert m-2 alert-danger" id="message" role="alert"></div> 
+    <!-- background img -->
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+          <source src="F:\E-comercs-js\imges\istockphoto-1341439627-640_adpp_is.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+    <!--end background img -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            id="login-row"
+            class="row mt-5 justify-content-center align-items-center"
+          >
+            <div id="login-column" class="col-md-6">
+              <div id="login-box groups" class="col-md-12 groups">
+                <form  novalidate id="login-form " class="form" >
+                  <h3 class="text-center text-info">register</h3>
+                 <!-- user name  -->
+                  <div class="form-group " >
+                    <label for="username" class="text-info">Username:</label
+                    ><br />
+                    <input
+                      type="text"
+                      id="username"
+                      class="form-control"
+                      placeholder="usernam"
+                    />
+                  </div>
+                 <!-- email  -->
+                 <div class="form-group " >
+                  <label for="email" class="text-info">E_mail:</label
+                  ><br />
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="email"
+                  />
+                </div>
+                 <!-- password  -->
+                  <div class="form-group">
+                    <label for="password" class="text-info">Password:</label
+                    ><br />
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="button"
+                      id="submit"
+                      class="btn btn-info btn-md w-100 mt-2"
+                      value="sign_up"
+                    />
+                  </div>
+                  <div id="register-link" class="text-right">
+                    <a href="../login/login.html" class="text-info">login here</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./register.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

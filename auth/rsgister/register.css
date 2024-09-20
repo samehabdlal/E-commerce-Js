@@ -1,0 +1,54 @@
+/* styles.css */
+
+html, body {
+    font-family: "Oswald", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: weight !important;
+    font-style: normal !important;
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the video is behind other content */
+    overflow: hidden;
+}
+.alert{
+    display: none;
+    position: absolute !important;
+    right: 10px;
+}
+#background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit:fill; /* Ensures the video covers the entire background */
+}
+.groups{
+    margin-top: 20% !important;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+padding: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* lodaer */
+
+  .loaders{
+    position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.541);
+      z-index: 1000;
+      display: none;
+}

@@ -1,0 +1,238 @@
+#user {
+  display: none;
+}
+.cart {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.card{
+  height: auto !important;
+}
+.grids {
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 16px;
+  padding: 10px;
+}
+.card-title{
+  text-decoration: none;
+  font-style: italic;
+  color:lawngreen;
+  filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.226));
+  text-align: center !important;
+  display: block;
+  font-size: 30px;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 100px;
+  font-size: 40px;
+  display: inline-block;
+}
+img {
+  height: 200px;
+  width: inherit;
+  object-fit: contain;
+}
+.mnue {
+  position: absolute;
+  left: -100px !important;
+}
+.navitemuser {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 7px;
+}
+@media (max-width: 789px) {
+  .titels{
+    margin-top: 20px;
+    text-align: right !important;
+    padding-right: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  .form-select{
+    position: fixed;
+    top: 140px !important;
+    right: 40px;
+    z-index: 1;
+    width: 300px !important;
+  }
+  .navitemuser {
+    display: flex;
+    justify-content: start !important;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .allproduct {
+    position: fixed;
+    width: 50% !important;
+    height: 100vh;
+    top: 60px;
+    right: 0;
+    background-color: #212529;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+nav {
+  position: fixed !important;
+  z-index: 1000 !important;
+  width: 100%;
+}
+.allproduct {
+  position: fixed;
+  display: none;
+  width: 30%;
+  height: 100vh;
+  top: 60px;
+  right: 0;
+  background-color: #212529;
+  z-index: 2200;
+  overflow: hidden;
+}
+.titels{
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+#carts {
+  margin-top: 40px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  height: 400px;
+  overflow-y: scroll !important;
+}
+
+/* تغيير شكل شريط التمرير */
+#carts::-webkit-scrollbar {
+  width: 10px; /* عرض شريط التمرير */
+}
+
+#carts::-webkit-scrollbar-track {
+    background-color: #212529;
+}
+
+#carts::-webkit-scrollbar-thumb {
+  background-color: #0dcaf0; 
+}
+.desc{
+  display: -webkit-box;
+	-webkit-line-clamp: 1 !important; 
+  border: none !important;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+.imgcart {
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.btnallproducts {
+  position: absolute;
+  bottom: 100px;
+  z-index: 1000;
+}
+#names {
+  border: 1px solid #ccc;
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+}
+.close{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-weight: 700;
+  border: 2px solid #0dcaf0 ;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: red;
+}
+.fa-cart-shopping:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #212529;
+  padding: 10px;
+  border-radius: 10px;
+}
+.fa-heart{
+  font-size: 20px;
+  cursor: pointer;
+}
+.fa-heart:hover{
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+.loader{
+  display: none ;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.308);
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+}
+.addproduct{
+  position: fixed;
+  right: 20px;
+  bottom:  150px;
+  transition: transform .5s; 
+  padding: 4px 4px;
+  background-color: #606fc7;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  height: 60px;
+  font-weight: 900;
+  width: 60px;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 100;
+ text-align: center;
+}
+.addproduct:hover {
+  transform: rotate(10deg); 
+  color: red;
+}
+.pyramid-description{
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.form-select{
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  z-index: 1;
+  width: 300px !important;
+}
+.card-description{
+  text-align: center;
+  margin: auto;
+  width:fit-content;
+  color: #3d3939;
+  font-style: oblique;
+ }
+ .searchelment{
+  position: relative;
+  right: 1000px;
+  transition: 1s !important;
+ }
